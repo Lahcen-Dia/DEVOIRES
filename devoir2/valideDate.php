@@ -35,5 +35,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                echo "<br>";
                 echo "date saisie est valide";
             } 
+    
+function estBissextile($annee) {
+ return ((($annee & 3) == 0) && (($annee % 100 != 0) || ($annee % 400 == 0)));
+}
+
+if(!estBissextile($annee) && $jour == 29 && $mois == 2){
+  echo " <BR>$annee n'est pas bissextile<BR>";;
+}
 }
 ?>   

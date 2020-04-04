@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
               $annee = $_POST["annee"];
               //$date=date_parse_from_format("d/m/Y", $date);
               //$date = date_parse($date);
-              if(!(checkdate($jour, $mois, $annee))){
+              if(!(checkdate($mois, $jour, $annee))){
                echo "la date saisie ";
                echo $_POST["jour"];
                echo"/";

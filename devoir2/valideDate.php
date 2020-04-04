@@ -1,4 +1,7 @@
-
+/*
+OUSAYD Lahcen
+AIT OUALI Es-saadia
+*/
 <?php 
 echo"<h1>Validation de la date</h1>";
 $date = "";
